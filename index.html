@@ -14,25 +14,25 @@
   </head>
   <body>
     <div class="calculator-grid">
-      <input type="text" id="display" readonly value="1+5" />
-      <button class="span-two danger">AC</button>
-      <button class="delete">DEL</button>
-      <button>÷</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>*</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>+</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>-</button>
-      <button>0</button>
-      <button>.</button>
-      <button class="span-two">=</button>
+      <input type="text" id="display" readonly></input>
+      <button class="span-two danger" onclick="clearDisplay()">AC</button>
+      <button class="delete" onclick="clearOne()">DEL</button>
+      <button onclick="appendOnDisplay('+')">÷</button>
+      <button onclick="appendOnDisplay('1')">1</button>
+      <button onclick="appendOnDisplay('2')">2</button>
+      <button onclick="appendOnDisplay('3')">3</button>
+      <button onclick="appendOnDisplay('*')">*</button>
+      <button onclick="appendOnDisplay('4')">4</button>
+      <button onclick="appendOnDisplay('5')">5</button>
+      <button onclick="appendOnDisplay('6')">6</button>
+      <button onclick="appendOnDisplay('+')">+</button>
+      <button onclick="appendOnDisplay('7')">7</button>
+      <button onclick="appendOnDisplay('8')">8</button>
+      <button onclick="appendOnDisplay('9')">9</button>
+      <button onclick="appendOnDisplay('-')">-</button>
+      <button onclick="appendOnDisplay('0')">0</button>
+      <button onclick="appendOnDisplay('.')">.</button>
+      <button class="span-two" onclick="calculate()">=</button>
     </div>
     <script src="script.js"></script>
   </body>

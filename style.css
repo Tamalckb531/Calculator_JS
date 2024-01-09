@@ -49,6 +49,7 @@ body {
   padding: 15px;
   font-size: 25px;
   text-align: right;
+  
 }
 .span-two {
   grid-column-end: span 2;
@@ -93,3 +94,5 @@ button:hover {
 button:active {
   background-color: var(--black);
 }
+
+textarea { resize: none; }
